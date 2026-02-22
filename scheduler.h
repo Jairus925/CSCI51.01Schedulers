@@ -21,6 +21,13 @@ struct Block {
     bool finished;
 };
 
+struct TestCase {
+    int caseNum;
+    std::string algo;
+    int quantum;              // only for RR, otherwise 0
+    std::vector<Process> processes;
+};
+
 void printHeader(int caseNum, std::string algo);
 void printGantt(const std::vector<Block>& gantt);
 void printStats(std::vector<Process>& processes, int totalTime, int cpuBurst);
