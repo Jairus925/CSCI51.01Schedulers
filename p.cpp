@@ -3,7 +3,8 @@
 #include "scheduler.h"
 using namespace std;
 
-int selectNextProcessP(const vector<Process>& processes, const vector<bool>& done, int time) {
+int selectNextProcessP(const vector<Process>& processes, const vector<bool>& done, int time) 
+{
     int idx = -1;
     for (int j = 0; j < processes.size(); j++) 
     {
