@@ -47,9 +47,10 @@ int main() {
         /*
         else if (tc.algo == "P")
             runPriority(tc.processes, tc.caseNum, tc.algo);
+        */
         else if (tc.algo == "RR")
             runRR(tc.processes, tc.caseNum, tc.algo, tc.quantum);
-        */
+        
         cout << "\n";
     }
 
