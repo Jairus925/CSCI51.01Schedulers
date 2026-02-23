@@ -52,12 +52,13 @@ int main() {
             runFCFS(tc.processes, tc.caseNum, tc.algo);
         else if (tc.algo == "SJF")
             runSJF(tc.processes, tc.caseNum, tc.algo);
-        // else if (tc.algo == "SRTF")
-        //     runSRTF(tc.processes, tc.caseNum, tc.algo);
+        else if (tc.algo == "SRTF")
+            runSRTF(tc.processes, tc.caseNum, tc.algo);
         else if (tc.algo == "P")
             runPriority(tc.processes, tc.caseNum, tc.algo);
-        // else if (tc.algo == "RR")
-        //     runRR(tc.processes, tc.caseNum, tc.algo, tc.quantum);
+        else if (tc.algo == "RR")
+            runRR(tc.processes, tc.caseNum, tc.algo, tc.quantum);
+
         cout << "\n";
     }
 
