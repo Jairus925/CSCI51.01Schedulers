@@ -40,9 +40,9 @@ int main() {
     for (auto &tc : testCases) {
         if (tc.algo == "FCFS")
             runFCFS(tc.processes, tc.caseNum, tc.algo);
-        /*
         else if (tc.algo == "SJF")
             runSJF(tc.processes, tc.caseNum, tc.algo);
+        /*
         else if (tc.algo == "SRTF")
             runSRTF(tc.processes, tc.caseNum, tc.algo);
         else if (tc.algo == "P")
