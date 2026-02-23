@@ -3,7 +3,7 @@
 #include "scheduler.h"
 using namespace std;
 
-int selectNextProcess(const vector<Process>& processes, const vector<bool>& done, int time) 
+int selectNextProcessSJF(const vector<Process>& processes, const vector<bool>& done, int time) 
 {
     int idx = -1;
     for (int j = 0; j < processes.size(); j++) 
@@ -24,7 +24,7 @@ void runSJF(vector<Process> processes, int caseNum, string algo)
 
     for (int i = 0; i < n; i++) 
     {
-        int idx = selectNextProcess(processes, done, time);
+        int idx = selectNextProcessSJF(processes, done, time);
 
         if (idx == -1) {
             time++;
