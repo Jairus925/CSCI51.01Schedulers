@@ -11,6 +11,7 @@ struct Process {
     int nice;
 
     int start = -1;
+    int remaining = 0;
     int completion = 0;
 };
 
